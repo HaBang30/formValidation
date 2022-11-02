@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, #0f2027 #203a43 #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+.form {
+    position: relative;
+    width: 300px;
+    margin: 10vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.form h1 {
+    color: #0f2027;
+    text-align: center;
+    margin-top: 10px;
+}
+.form button {
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+}
+.form button:hover {
+    background-color:#0b0;
+    color: yellow;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.input-field input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 96%;
+}
+
+.form .fa {
+    position: absolute;
+    right: 15px;
+    margin-top: 30px;
+}
+
+.form .input-field.error input {
+    border-color: #f00;
+    border-width: 2px;
+}
+.form .input-field.error .fa {
+    color: #f00;
+}
+.form .input-field.success input {
+    border-color: #0d0;
+    border-width: 2px;
+}
+.form .input-field.success .fa {
+    color:#0d0;
+}
+.form .input-field span {
+    display: none;
+
+}
+.form .input-field.error span {
+    color:#f00;
+    display: block;
+}
+.form .input-field.success span {
+    color: #0d0;
+}
